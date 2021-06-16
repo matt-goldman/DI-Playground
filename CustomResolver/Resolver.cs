@@ -27,7 +27,7 @@ namespace DI_Playground.CustomResolver
         {
             Console.WriteLine($"Type to resolve is: {typeof(T)}");
 
-            var result = scope.ServiceProvider.GetService<T>();
+            var result = scope.ServiceProvider.GetRequiredService<T>();
 
             if (result is null)
             {

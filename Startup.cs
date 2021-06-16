@@ -31,6 +31,7 @@ namespace DI_Playground
             });
 
             services.AddTransient<IGreeting, HelloService>();
+            services.AddTransient<ConsoleGreeter>();
 
             services.UseResolver();
         }
